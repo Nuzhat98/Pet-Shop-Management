@@ -33,7 +33,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public List<CustomerEntity> findCustomerByName(String customerName) {
-        return customerRepository.findByName(customerName);
+        return customerRepository.findByCustomerName(customerName);
     }
 
     @Override
