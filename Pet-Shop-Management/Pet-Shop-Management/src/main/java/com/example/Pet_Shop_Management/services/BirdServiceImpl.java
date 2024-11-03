@@ -30,7 +30,7 @@ public class BirdServiceImpl implements BirdService{
 
     @Override
     public List<BirdEntity> findBirdByName(String birdName) {
-        return (List<BirdEntity>) birdRepository.findByName(birdName);
+        return (List<BirdEntity>) birdRepository.findByBirdName(birdName);
     }
 
     @Override
