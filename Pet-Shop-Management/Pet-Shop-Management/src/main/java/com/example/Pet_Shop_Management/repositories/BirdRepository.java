@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface BirdRepository extends JpaRepository<BirdEntity,Long> {
-    List<BirdEntity> findByName(String birdName);
+    List<BirdEntity> findByBirdName(String birdName);
 }
