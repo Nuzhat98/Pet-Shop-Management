@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface CatRepository extends JpaRepository<CatEntity, Long> {
-    List<CatEntity> findByName(String catName);
+    List<CatEntity> findByCatName(String catName);
 }
