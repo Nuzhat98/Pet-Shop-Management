@@ -34,7 +34,7 @@ public class FoodServiceImpl implements FoodService {
 
     @Override
     public List<FoodEntity> findFoodByName(String foodName) {
-        return foodRepository.findByName(foodName);
+        return foodRepository.findByFoodName(foodName);
     }
 
     @Override
