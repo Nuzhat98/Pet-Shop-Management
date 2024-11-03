@@ -33,7 +33,7 @@ public class DogServiceImpl implements DogService {
 
     @Override
     public List<DogEntity> findDogByName(String dogName) {
-        return dogRepository.findByName(dogName);
+        return dogRepository.findByDogName(dogName);
     }
 
     @Override
