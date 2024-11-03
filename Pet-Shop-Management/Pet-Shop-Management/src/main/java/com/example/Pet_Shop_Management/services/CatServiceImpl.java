@@ -31,7 +31,7 @@ public class CatServiceImpl implements CatService{
 
     @Override
     public List<CatEntity> findCatByName(String catName) {
-        return (List<CatEntity>) catRepository.findByName(catName);
+        return (List<CatEntity>) catRepository.findByCatName(catName);
     }
 
     @Override
